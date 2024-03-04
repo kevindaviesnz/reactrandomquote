@@ -20,12 +20,6 @@ git push -u origin main
 
 
 
-git init
-git add .
-git commit -m "First commit"
-git remote add origin https://github.com/kevindaviesnz/ReactHelloWorld.git
-git push -u origin main
-
 Running server:
 $ npx http-server -p 3000
 or
