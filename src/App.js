@@ -1,11 +1,25 @@
-import logo from './logo.svg';
+
 import './App.css';
 
+const Quote = (props) => {
+  return (
+    <h1>
+      {props.quote}
+    </h1>
+  );
+};
+
 function App() {
+  const quotes = [
+    "Say hello to my little friend.",
+    "The first rule of Fight Club is you do not talk about Fight Club"
+  ]
+  const idx = Math.floor(Math.random() * quotes.length)
   return (
     <div className="App">
+      <h1>{quotes[idx]}</h1>
+      <Quote quote={quotes[idx]} />
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
@@ -18,8 +32,10 @@ function App() {
           Learn React
         </a>
       </header>
+
     </div>
   );
 }
 
 export default App;
+
