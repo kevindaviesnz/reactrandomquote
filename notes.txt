@@ -24,3 +24,28 @@ Running server:
 $ npx http-server -p 3000
 or
 $ python -m http.server 3000
+
+
+Deploying to Github pages:
+npm install --save gh-pages
+package.json:
+"homepage": "https://kevindaviesnz.github.io/reactrandomquote/",
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
+   "build": "react-scripts build",
+   "test": "react-scripts test",
+  "eject": "react-scripts eject"
+  ...
+
+},
+
+}
+npm run build
+git add .
+git commit -m "Add build files for GitHub Pages deployment"
+git push origin gh-pages
+npm run deploy
+github -> reactcalculator -> settings -> pages -> select gh-pages as branch
+
+https://kevindaviesnz.github.io/reactcalculator/
