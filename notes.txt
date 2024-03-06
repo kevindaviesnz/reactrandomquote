@@ -46,6 +46,6 @@ git add .
 git commit -m "Add build files for GitHub Pages deployment"
 git push origin gh-pages
 npm run deploy
-github -> reactcalculator -> settings -> pages -> select gh-pages as branch
+github -> reactrandomquote -> settings -> pages -> select gh-pages as branch
 
 https://kevindaviesnz.github.io/reactcalculator/
